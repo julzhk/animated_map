@@ -153,6 +153,7 @@ $(window).load(function() {
 		timeScaleFastBtn = $("#timeScaleFastBtn"),
 		restartBtn = $("#restartBtn"),
 		tl = new TimelineLite({onUpdate:updateSlider});
+		tl.insert(TweenLite.to("#event1", 0, {top:77,left:99,autoAlpha:0}),1)
 		tl.insert(TweenLite.to("#event1", .5, {autoAlpha:1, delay:0,scale:2.5}),1)
 			.to("#event1", 0.5, {autoAlpha:0},"-=0.2");
 		tl.insert(TweenLite.to("#event2", .5, {autoAlpha:1, delay:0,scale:.5}),1.5)
@@ -170,6 +171,13 @@ $(window).load(function() {
 			.to("#event3", 0.5, {autoAlpha:0},"-=0.2");	
 		tl.insert(TweenLite.to("#event4", .5, {autoAlpha:1, delay:0,scale:1.5}),2.9)
 			.to("#event4", 0.5, {autoAlpha:0},"-=0.2");
+
+tl.insert(TweenLite.to("#event1", .5, {autoAlpha:1, delay:0,scale:0.04}),6.53) .to("#event1", 0.5, {autoAlpha:0},"-=0");
+tl.insert(TweenLite.to("#event2", .5, {autoAlpha:1, delay:0,scale:0.78}),4.57) .to("#event2", 0.5, {autoAlpha:0},"-=0");
+tl.insert(TweenLite.to("#event3", .5, {autoAlpha:1, delay:0,scale:0.71}),1.35) .to("#event3", 0.5, {autoAlpha:0},"-=0");
+tl.insert(TweenLite.to("#event4", .5, {autoAlpha:1, delay:0,scale:1.95}),5.81) .to("#event4", 0.5, {autoAlpha:0},"-=0");
+tl.insert(TweenLite.to("#event1", .5, {autoAlpha:1, delay:0,scale:6.11}),7.15) .to("#event1", 0.5, {autoAlpha:0},"-=0");
+tl.insert(TweenLite.to("#event2", .5, {autoAlpha:1, delay:0,scale:0.26}),0.58) .to("#event2", 0.5, {autoAlpha:0},"-=0");
 
 
 	    tl.from(timelinelite, 0.25, {width:"0px", alpha:0}, "-=0.2")

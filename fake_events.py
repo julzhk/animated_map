@@ -1,5 +1,8 @@
 import random
 def rnd(seed):
+    """
+    Create a random timeline of events
+    """
     if seed:
         r= seed/100.0 + 10* random.random()
     else:
